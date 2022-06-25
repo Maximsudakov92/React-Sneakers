@@ -22,7 +22,24 @@ function App() {
             <li><img width={20} height={20} src="/img/user.svg" alt="user"/></li>
           </ul> 
         </header>
-        
+        <div className="content">
+          <h1>Все кроссовки</h1>
+          <div className="cardWrapper">
+            <div className="card">
+              <img width={133} height={112} src="/img/sneakers/1.jpg" alt="Sneakers" />
+              <p>Мужские Кроссовки Nike Blazer Mid Suede</p>
+              <div className="cardBottom">
+                <div className="cardBottomInfo">
+                  <span>Цена:</span>
+                  <b>12 999руб.</b>
+                </div>
+                <button className="cardBtnAdd">
+                  <img width={30} height={30} src="/img/plus.svg" alt="add" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
