@@ -168,7 +168,7 @@ header {
   flex-direction: column;
 }
 
-.cardBtnAdd{
+.cardBtnAdd, .cartBtnCancel {
   background: #FFFFFF;
   border: 1px solid #f2f2f2;
   box-sizing: border-box;
@@ -178,6 +178,138 @@ header {
   cursor: pointer;
   padding: 0;
   border: none;
-  align-self: self-end;
+  align-self: center;
 }
 
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.drawerCart {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+  right: 0;
+  height: 100%;
+  background: #FFFFFF;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+}
+
+.cartItemInfo {
+  margin: 0 21px;
+}
+
+.drawerCart h3 {
+  margin: 0;
+}
+
+.cartItem p {
+  font-style: normal;
+  margin-bottom: 8px;
+}
+
+.cartItemInfo b {
+  font-weight: 700;
+}
+
+.cartItemInfo b, 
+.cartItem p {
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 14px;
+}
+
+.cartItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid #F3F3F3;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.cartBtnCancel {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.cartBtnCancel:hover {
+  opacity: 1;
+}
+
+.dashed {
+  flex: 1;
+  height: 1px;
+  border-bottom: 1px dashed #dfdfdf;
+  position: relative;
+  top: -3px;
+  margin: 0 7px;
+}
+
+.cartContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 40px;
+}
+
+
+
+.cartBottom li{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.cartBottom ul {
+  padding: 0;
+}
+
+.greenButton {
+  padding: 0;
+  border: none;
+  width: 345px;
+  height: 55px;
+  background: #9DD458;
+  color: #FFFFFF;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 5px;
+  cursor: pointer;
+ 
+}
+
+.greenButton:hover {
+  background-color: #91d53e ;
+}
+
+.greenButton:active {
+  background-color: #adda77 ;
+}
+
+.drawerCart h2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.drawerCart h2 img {
+  cursor: pointer;
+}
+
+.cartContent {
+  overflow: auto;
+}
