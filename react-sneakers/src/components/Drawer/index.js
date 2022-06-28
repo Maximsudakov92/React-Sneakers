@@ -1,40 +1,42 @@
+import styles from './Drawer.module.css';
+
 function Drawer() {
   return(
-    <div style={{display: "none"}} className="overlay">
-      <div className="drawerCart">
+    <div className={styles.overlay}>
+      <div className={styles.drawerCart}>
         <h2>
           Корзина
           <img width={32} height={32} src="/img/cancel.svg" alt="cancel" />  
         </h2>
-        <div className="cartContent">
-          <div className="items">
-            <div className="cartItem">
+        <div className={styles.cartContent}>
+          <div className={styles.items}>
+            <div className={styles.cartItem}>
               <img width={70} height={70} src="/img/sneakers/1.jpg" alt="sneakers" />
-              <div className="cartItemInfo">
+              <div className={styles.cartItemInfo}>
                 <p>Мужские Кроссовки Nike Blazer Mid Suede</p>
                 <b>12 999руб.</b>
               </div>
-              <button className="cartBtnCancel">
+              <button className={styles.cartBtnCancel}>
                 <img width={32} height={32} src="/img/cancel.svg" alt="cancel" />
               </button>
             </div>
           </div>
         </div>
-        <div className="cartBottom">
+        <div className={styles.cartBottom}>
           <ul>
             <li>
               <span>Итого:</span>
-              <div className="dashed"></div>
+              <div className={styles.dashed}></div>
               <b>21 498 руб.</b>
             </li>
             <li>
               <span>Налог 5%:</span>
-              <div className="dashed"></div>
+              <div className={styles.dashed}></div>
               <b>1074 руб.</b>
             </li>
           </ul>
         </div>
-        <button className="greenButton">Оформить заказ</button>
+        <button className={styles.greenButton}>Оформить заказ</button>
       </div>
     </div>
   )

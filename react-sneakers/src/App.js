@@ -1,6 +1,13 @@
 import Card from './components/Card';
 import Header from './components/Header';
 import Drawer from './components/Drawer';
+
+const sneakersItems = [
+  {title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: 12999},
+  {title: 'Мужские Кроссовки Nike Air Max 270', price: 15999},
+];
+
+
 function App() {
   return (
     <div className="app">
@@ -16,11 +23,13 @@ function App() {
             </div>
           </div>
           <div className="cardWrapper">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {sneakersItems.map((obj, index) => 
+              <Card 
+              title={obj.title} 
+              price={obj.price}
+              imageUrl={`/img/sneakers/${index + 1}.jpg`}
+              />
+            )}
           </div>
         </div>
       </div>

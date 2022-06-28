@@ -1,14 +1,16 @@
+import styles from './Header.module.css';
+
 function Header() {
   return(
-    <header>
-      <div className="headerLeft">
+    <header className={styles.header}>
+      <div className={styles.headerLeft}>
         <img width={40} height={40} src="/img/logo.png" alt="logo" />
-        <div className="headerInfo">
+        <div>
           <h3>React Sneakers</h3>
           <p>Магазин лучших кроссовок</p>
         </div>
       </div>
-      <ul className="headerRight">
+      <ul className={styles.headerRight}>
         <li>
           <img width={18} height={18} src="/img/cart.svg" alt="cart" />
           <span>1205 руб.</span>
