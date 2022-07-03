@@ -22,8 +22,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 .contentTop {
   display: flex;
   justify-content: space-between;
@@ -43,6 +41,11 @@ body {
   padding: 10px;
   font-size: 16px;
   width: 200px;
+  outline:none;
+}
+
+.searchBlock:last-child {
+  cursor: pointer;
 }
 
 .content h1 {
@@ -51,7 +54,6 @@ body {
 
 .cardWrapper {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 

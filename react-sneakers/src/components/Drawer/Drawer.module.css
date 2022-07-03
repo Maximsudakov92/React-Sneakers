@@ -6,7 +6,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  display: none;
 }
 
 .drawerCart {
@@ -105,9 +104,8 @@
   font-weight: 600;
   font-size: 16px;
   margin-top: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   cursor: pointer;
- 
 }
 
 .greenButton:hover {
@@ -142,4 +140,38 @@
   padding: 0;
   border: none;
   align-self: center;
+}
+
+.emptyDrawer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50%;
+}
+
+.emptyDrawer h3 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.emptyDrawer p {
+  text-align: center;
+  line-height: 24px;
+  opacity: 0.4;
+}
+
+.emptyDrawer button {
+  padding: 0;
+  border: none;
+  width: 245px;
+  height: 55px;
+  background: #9DD458;
+  color: #FFFFFF;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }

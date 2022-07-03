@@ -42,12 +42,12 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  
 }
 
 .headerRight li {
   list-style: none;
   margin-right: 30px;
-  cursor: pointer;
 }
 
 .headerRight li:first-child > img {
@@ -56,4 +56,8 @@
 
 .headerRight li:first-child > span {
   vertical-align: text-top;
+}
+
+.headerRight li * {
+  cursor: pointer;
 }

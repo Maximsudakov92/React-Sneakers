@@ -1,6 +1,8 @@
 import styles from './Header.module.css';
 
-function Header() {
+
+
+function Header(props) {
   return(
     <header className={styles.header}>
       <div className={styles.headerLeft}>
@@ -11,7 +13,7 @@ function Header() {
         </div>
       </div>
       <ul className={styles.headerRight}>
-        <li>
+        <li onClick={props.onClickCart}>
           <img width={18} height={18} src="/img/cart.svg" alt="cart" />
           <span>1205 руб.</span>
         </li>
